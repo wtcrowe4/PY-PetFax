@@ -22,12 +22,16 @@
  {% extends "base.html" %}
     {% block title %}PetFax{% endblock %}
     {% block content %}
-        {% for pet in pets %}
-            <h2>{{ pet.pet_name }}</h2>
-            <a href='/pets/{{ pet.pet_id }}'>
-                <img src="{{ pet.pet_photo }}" alt="{{ pet.pet_name }}">
-            </a>
-        {% endfor %}
+        <div class="container">
+            {% for pet in pets %}
+                <div class="pet_card">
+                    <h2>{{ pet.pet_name }}</h2>
+                    <a href='/pets/{{ pet.pet_id }}'>
+                        <img src="{{ pet.pet_photo }}" alt="{{ pet.pet_name }}">
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
     {% endblock %}
     
     

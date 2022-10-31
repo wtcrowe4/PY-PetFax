@@ -8,8 +8,9 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     </head>
     <body>
-        <nav class="navbar bg-dark">
-            <div class="flex-container">
+        <div class="nav_container">
+        <nav class="navbar">
+            <div class="flex-container nav_content fixed">
                 <a class="navbar-brand" href="/">PetFax</a>
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -21,6 +22,7 @@
                 </ul>     
             </div>
         </nav>
+        </div>
         <h1>PetFax</h1>
         {% block content %}
         {% endblock %}
