@@ -25,7 +25,7 @@
     {% block title %}Submit Fact{% endblock %}
     {% block content %}
         <h3>Fact Submission Form</h3>
-        <form class="form form-control">
+        <form action="/facts" method="POST" class="form form-control">
             <label for="fact">Fact:</label>
             <input type="text" name="fact" id="fact">
             <label for="author">Author:</label>
